@@ -1,0 +1,64 @@
+:root {
+  --clr-primary: #eb2f64;
+  --clr-primary-light: #ff3366;
+  --clr-primary-dark: #ba265d;
+
+  --clr-white: #fff;
+  --clr-grey-light-1: #faf9f9;
+  --clr-grey-light-2: #f4f2f2;
+  --clr-grey-light-3: #f0eeee;
+  --clr-grey-light-4: #ccc;
+
+  --clr-grey-dark-1: #333;
+  --clr-grey-dark-2: #777;
+  --clr-grey-dark-3: #999;
+  --clr-black: #000;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.6);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+
+  --line: 1px solid var(--clr-grey-light-2);
+}
+
+$bp-xs: 31.25em;   // 500px
+$bp-sm: 37.5em;   // 600px
+$bp-md: 58.75em;  // 940px
+$bp-lg: 68.75em;  // 1100px
+$bp-xl: 75em;     // 1200px
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1100px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--clr-grey-dark-2);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-primary-light),
+    var(--clr-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  //FIXME: Delete me after finish
+  min-height: 100vh;
+}
